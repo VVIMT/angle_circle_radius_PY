@@ -19,7 +19,7 @@ def		circle_radius(X1, X2, X3, Y1, Y2, Y3):
 	Rc = 0
 
 	if ((X1 == X2 and Y1 == Y2) or (X1 == X3 and Y1 == Y3) or (X2 == X3 and Y2 == Y3)):
-		write(2, "Input error\n", 12);
+		print("Input error\n")
 		return (0)
 	if (Y2-Y1 != 0 and Y3-Y2 != 0 and ((X3-X2)/(Y3-Y2)-(X2-X1)/(Y2-Y1)) != 0):
 		Xc = (pow(X3, 2)-pow(X2, 2)+pow(Y3, 2)-pow(Y2, 2))/(2*(Y3-Y2));
