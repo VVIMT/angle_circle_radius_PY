@@ -11,6 +11,8 @@ def		angle(X1, X2, X3, Y1, Y2, Y3):
 	a = math.sqrt(pow(X3 - X2, 2) + pow(Y3 - Y2, 2))
 	b = math.sqrt(pow(X2 - X1, 2) + pow(Y2 - Y1, 2))
 	c = math.sqrt(pow(X3 - X1, 2) + pow(Y3 - Y1, 2))
+	if a == 0 or b == 0 or c == 0:
+		return 0
 	return (math.acos((pow(a, 2) + pow(b, 2) - pow(c, 2))/(2*a*b))/math.pi * 180)
 
 def		circle_radius(X1, X2, X3, Y1, Y2, Y3):
